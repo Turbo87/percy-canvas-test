@@ -8,7 +8,7 @@ module('Acceptance | foobar', function(hooks) {
 
   test('visiting /', async function(assert) {
     await visit('/');
-    await percySnapshot(assert);
+    await percySnapshot(assert, { experimentalSerializedCanvasElements: true });
 
     assert.equal(currentURL(), '/');
   });
