@@ -6,7 +6,8 @@
 
 # dependencies
 /bower_components/
-/node_modules/
+/node_modules/*
+!/node_modules/ember-percy
 
 # misc
 /.sass-cache
